@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
+    "dev:export": "cd ./out && python -m SimpleHTTPServer 8000",
     "build": "next build",
+    "build:serverless": "env ENV_SERVERLESS=serverless next build",
     "start": "next start",
-    "export": "npm run build && next export"
+    "export": "npm run build && next export",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
